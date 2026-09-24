@@ -1,0 +1,24 @@
+﻿spring:
+  application:
+    name: cartoes-api
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+server:
+  port: 8080
+
+cartoes:
+  idade-minima: 18
+  produtos:
+    - tipo: CARTAO_SEM_ANUIDADE
+      limite-disponivel: 1000.00
+      renda-minima: 3500.00
+      valor-anuidade-mensal: 0.00
+    - tipo: CARTAO_DE_PARCEIROS
+      limite-disponivel: 3000.00
+      renda-minima: 5500.00
+      valor-anuidade-mensal: 10.00
+    - tipo: CARTAO_COM_CASHBACK
+      limite-disponivel: 5000.00
+      renda-minima: 7500.00
+      valor-anuidade-mensal: 20.00
