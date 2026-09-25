@@ -30,7 +30,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     private final String nomeServico;
 
-    public GlobalExceptionHandler(@Value("${spring.application.name}") String nomeServico) {
+    public GlobalExceptionHandler(@Value("${spring.application.name:cartoes-api}") String nomeServico) {
         this.nomeServico = nomeServico;
     }
 
